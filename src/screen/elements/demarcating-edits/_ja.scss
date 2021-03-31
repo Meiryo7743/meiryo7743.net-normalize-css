@@ -1,5 +1,10 @@
 html,
 blockquote {
   &:lang(ja) {
+    del {
+    }
+
+    ins {
+    }
   }
 }

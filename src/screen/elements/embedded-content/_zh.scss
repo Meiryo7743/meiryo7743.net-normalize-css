@@ -1,5 +1,25 @@
 html,
 blockquote {
   &:lang(zh) {
+    embed {
+    }
+
+    iframe {
+    }
+
+    object {
+    }
+
+    param {
+    }
+
+    picture {
+    }
+
+    portal {
+    }
+
+    source {
+    }
   }
 }

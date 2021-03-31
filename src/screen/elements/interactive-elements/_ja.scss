@@ -1,5 +1,16 @@
 html,
 blockquote {
   &:lang(ja) {
+    details {
+    }
+
+    dialog {
+    }
+
+    menu {
+    }
+
+    summary {
+    }
   }
 }

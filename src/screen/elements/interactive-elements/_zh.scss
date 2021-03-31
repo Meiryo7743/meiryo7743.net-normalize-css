@@ -1,5 +1,16 @@
 html,
 blockquote {
   &:lang(zh) {
+    details {
+    }
+
+    dialog {
+    }
+
+    menu {
+    }
+
+    summary {
+    }
   }
 }

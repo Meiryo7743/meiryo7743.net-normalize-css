@@ -1,5 +1,13 @@
 html,
 blockquote {
   &:lang(en) {
+    canvas {
+    }
+
+    noscript {
+    }
+
+    script {
+    }
   }
 }
