@@ -1,0 +1,18 @@
+{
+  "name": "meiryo7743.net-normalize-css",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Meiryo7743",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:screen && npm run build:print",
+    "build:screen": "sass ./src/screen.scss ./dist/normalize-screen.min.css --style=compressed --no-source-map",
+    "build:print": "sass ./src/print.scss ./dist/normalize-print.min.css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}
