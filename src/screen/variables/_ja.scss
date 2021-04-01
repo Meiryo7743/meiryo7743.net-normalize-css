@@ -1,2 +1,34 @@
+$_FONT_FAMILY: (
+  "sans-serif": (
+    system-ui,
+    -apple-system,
+    "Roboto",
+    "Segoe UI",
+    "Source Han Sans",
+    "Source Han Sans JP",
+    "Noto Sans CJK JP",
+    "Noto Sans JP",
+    "m9t Sans JP",
+    "Hiragino Sans",
+    sans-serif,
+  ),
+  "serif": (
+    "Source Serif Pro",
+    "Georgia LF",
+    "Georgia",
+    "Times New Roman",
+    "Source Han Serif",
+    "Noto Serif JP",
+    "Noto Serif CJK JP",
+    "Noto Serif JP",
+    "m9t Serif JP",
+    "Hiragino Mincho ProN",
+    serif,
+  ),
+);
+
 :root:lang(ja) {
+  @each $kind, $fonts in $_FONT_FAMILY {
+    --font-family-#{$kind}: #{$fonts};
+  }
 }

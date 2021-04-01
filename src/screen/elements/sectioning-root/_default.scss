@@ -1,5 +1,16 @@
+@use "../../../global/extends";
+
 html,
 blockquote {
   body {
+    @extend %element-type-block;
+
+    background: var(--background-color-body);
+    color: var(--color-body);
+    font-family: var(--font-family-sans-serif);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.75;
+    overflow-wrap: break-word;
+    text-align: justify;
   }
 }

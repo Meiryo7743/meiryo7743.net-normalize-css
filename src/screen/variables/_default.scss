@@ -1,3 +1,5 @@
+@use "../../global/mixin";
+
 // https://jfly.uni-koeln.de/colorset/CUD_color_set_GuideBook_2018.pdf
 $_COLORS: (
   "beige": #facd93,
@@ -20,25 +22,6 @@ $_COLORS: (
   "yellow": #fff100,
 );
 
-$_COLORS_BW: (
-  "bw-0": #000,
-  "bw-1": #111,
-  "bw-2": #222,
-  "bw-3": #333,
-  "bw-4": #444,
-  "bw-5": #555,
-  "bw-6": #666,
-  "bw-7": #777,
-  "bw-8": #888,
-  "bw-9": #999,
-  "bw-a": #aaa,
-  "bw-b": #bbb,
-  "bw-c": #ccc,
-  "bw-d": #ddd,
-  "bw-e": #eee,
-  "bw-f": #fff,
-);
-
 $_FONT_SIZES: (
   "xxx-small": 0.5,
   "xx-small": 0.7,
@@ -51,16 +34,62 @@ $_FONT_SIZES: (
   "xxx-large": 2.074,
 );
 
+$_FONT_WEIGHTS: (
+  "normal": 400,
+  "bold": 700,
+);
+
+$_FONT_FAMILY: (
+  "monospace": (
+    "Cascadia Code",
+    "SFMono-Regular",
+    "Consolas",
+    "Liberation Mono",
+    "Menlo",
+    monospace,
+  ),
+  "sans-serif": sans-serif,
+  "serif": serif,
+);
+
 :root {
   @each $color, $hex in $_COLORS {
     --color-#{$color}: #{$hex};
   }
 
-  @each $color, $hex in $_COLORS_BW {
-    --color-#{$color}: #{$hex};
-  }
-
   @each $size, $value in $_FONT_SIZES {
     --font-size-#{$size}: #{$value};
+  }
+
+  @each $weight, $value in $_FONT_WEIGHTS {
+    --font-weight-#{$weight}: #{$value};
+  }
+
+  @each $weight, $value in $_FONT_WEIGHTS {
+    --font-weight-#{$weight}: #{$value};
+  }
+
+  @each $kind, $fonts in $_FONT_FAMILY {
+    --font-family-#{$kind}: #{$fonts};
+  }
+
+  --border-width-default: 1px;
+
+  @include mixin.color-scheme("light") {
+    --background-color-body: #fff;
+    --background-color-form: #eee;
+    --border-color-default: #ccc;
+    --color-a-visited: var(--color-purple);
+    --color-a: var(--color-blue);
+    --color-body: #222;
+  }
+
+  @include mixin.color-scheme("dark") {
+    --background-color-body: #222;
+    --background-color-form: #111;
+    --border-color-default: #666;
+    --color-a-visited: var(--color-light-purple);
+    --color-a: var(--color-sky-blue);
+    --color-body: #ddd;
   }
 }

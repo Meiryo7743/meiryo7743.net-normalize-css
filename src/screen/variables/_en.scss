@@ -1,2 +1,22 @@
+$_FONT_FAMILY: (
+  "sans-serif": (
+    system-ui,
+    -apple-system,
+    "Roboto",
+    "Segoe UI",
+    sans-serif,
+  ),
+  "serif": (
+    "Source Serif Pro",
+    "Georgia LF",
+    "Georgia",
+    "Times New Roman",
+    serif,
+  ),
+);
+
 :root:lang(en) {
+  @each $kind, $fonts in $_FONT_FAMILY {
+    --font-family-#{$kind}: #{$fonts};
+  }
 }
