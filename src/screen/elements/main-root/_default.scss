@@ -1,2 +1,6 @@
+@use "../../../global/extends";
+
 html {
+  @extend %element-type-block;
+  font-size: calc(16px + 100vmin / 512);
 }
