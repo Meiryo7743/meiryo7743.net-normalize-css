@@ -1,20 +1,28 @@
+@use "../../../global/extends";
+
 html,
 blockquote {
   base {
+    @extend %element-type-hidden;
   }
 
   head {
+    @extend %element-type-hidden;
   }
 
   link {
+    @extend %element-type-hidden;
   }
 
   meta {
+    @extend %element-type-hidden;
   }
 
   style {
+    @extend %element-type-hidden;
   }
 
   title {
+    @extend %element-type-hidden;
   }
 }
