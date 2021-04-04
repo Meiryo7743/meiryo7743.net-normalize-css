@@ -2,6 +2,7 @@ html,
 blockquote {
   &:lang(ja) {
     blockquote {
+      padding-inline-end: 0;
     }
 
     dd {
