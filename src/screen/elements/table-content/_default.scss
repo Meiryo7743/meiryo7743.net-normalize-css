@@ -1,7 +1,6 @@
 @use "../../../global/extends";
 
-html,
-blockquote {
+html {
   caption {
     @extend %no-padding;
 

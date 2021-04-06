@@ -1,7 +1,6 @@
 @use "../../../global/extends";
 
-html,
-blockquote {
+html {
   canvas {
     @extend %element-type-inline;
 

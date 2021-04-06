@@ -1,7 +1,6 @@
 @use "../../../global/extends";
 
-html,
-blockquote {
+html {
   acronym {
     @extend %element-type-hidden;
   }

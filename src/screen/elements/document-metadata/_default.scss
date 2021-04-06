@@ -1,7 +1,6 @@
 @use "../../../global/extends";
 
-html,
-blockquote {
+html {
   base {
     @extend %element-type-hidden;
   }

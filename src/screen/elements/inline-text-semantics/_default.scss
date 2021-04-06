@@ -1,7 +1,6 @@
 @use "../../../global/extends";
 
-html,
-blockquote {
+html {
   a {
     @extend %element-type-inline;
 
