@@ -1,8 +1,17 @@
+@use "../../../global/extends";
+
 html,
 blockquote {
   del {
+    @extend %element-type-inline;
+
+    color: var(--color-gray);
+    text-decoration: line-through double;
   }
 
   ins {
+    @extend %element-type-inline;
+
+    text-decoration: none;
   }
 }
