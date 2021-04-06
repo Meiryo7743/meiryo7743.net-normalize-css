@@ -1,14 +1,31 @@
+@use "../../../global/extends";
+
 html,
 blockquote {
   details {
+    @extend %element-type-block;
   }
 
   dialog {
+    @extend %element-type-block;
+
+    &:not([open]) {
+      @extend %element-type-hidden;
+    }
   }
 
   menu {
   }
 
   summary {
+    @extend %element-type-block;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    + * {
+      margin-block-start: 0 !important;
+    }
   }
 }
