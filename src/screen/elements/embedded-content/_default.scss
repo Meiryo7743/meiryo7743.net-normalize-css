@@ -1,12 +1,20 @@
+@use "../../../global/extends";
+
 html,
 blockquote {
   embed {
   }
 
   iframe {
+    @extend %element-type-block;
+
+    border: none;
   }
 
   object {
+    @extend %element-type-block;
+
+    border: none;
   }
 
   param {
