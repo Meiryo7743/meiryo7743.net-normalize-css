@@ -101,7 +101,7 @@ html {
     @extend %element-type-ruby;
 
     text-transform: full-size-kana;
-    user-select: none !important;
+    user-select: none;
     white-space: nowrap;
   }
 
