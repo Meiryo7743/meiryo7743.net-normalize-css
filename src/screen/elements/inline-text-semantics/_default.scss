@@ -31,15 +31,6 @@ html {
     font-weight: var(--font-weight-bold);
   }
 
-  // bdi {
-  // }
-
-  // bdo {
-  // }
-
-  // br {
-  // }
-
   cite {
     @extend %element-type-inline;
 
@@ -128,9 +119,6 @@ html {
     font-size: 1em;
   }
 
-  // span {
-  // }
-
   strong {
     @extend %element-type-inline;
 
@@ -167,7 +155,4 @@ html {
     font-family: var(--font-family-serif);
     font-style: italic;
   }
-
-  // wbr {
-  // }
 }
