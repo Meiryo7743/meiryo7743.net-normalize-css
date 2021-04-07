@@ -2,7 +2,7 @@
 
 html {
   caption {
-    @extend %no-padding;
+    @extend %padding-0;
 
     display: table;
     margin-block-end: 0;
@@ -12,17 +12,17 @@ html {
   }
 
   col {
-    @extend %no-margin;
-    @extend %no-padding;
+    @extend %margin-0;
+    @extend %padding-0;
   }
 
   colgroup {
-    @extend %no-margin;
-    @extend %no-padding;
+    @extend %margin-0;
+    @extend %padding-0;
   }
 
   table {
-    @extend %no-padding;
+    @extend %padding-0;
 
     border-block-end: solid var(--border-width) var(--color-border);
     border-block-start: solid var(--border-width) var(--color-border);
@@ -38,12 +38,12 @@ html {
   }
 
   tbody {
-    @extend %no-margin;
-    @extend %no-padding;
+    @extend %margin-0;
+    @extend %padding-0;
   }
 
   td {
-    @extend %no-margin;
+    @extend %margin-0;
 
     padding-block-end: 0.375rem;
     padding-block-start: 0.375rem;
@@ -53,15 +53,15 @@ html {
   }
 
   tfoot {
-    @extend %no-margin;
-    @extend %no-padding;
+    @extend %margin-0;
+    @extend %padding-0;
 
     border-block-start: solid var(--border-width-default)
       var(--border-color-default);
   }
 
   th {
-    @extend %no-margin;
+    @extend %margin-0;
 
     font-weight: var(--font-weight-bold);
     padding-block-end: 0.375rem;
@@ -72,16 +72,16 @@ html {
   }
 
   thead {
-    @extend %no-margin;
-    @extend %no-padding;
+    @extend %margin-0;
+    @extend %padding-0;
 
     border-block-end: solid var(--border-width-default)
       var(--border-color-default);
   }
 
   tr {
-    @extend %no-margin;
-    @extend %no-padding;
+    @extend %margin-0;
+    @extend %padding-0;
 
     vertical-align: middle;
   }
