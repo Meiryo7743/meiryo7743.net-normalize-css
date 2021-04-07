@@ -74,6 +74,7 @@ $_FONT_FAMILY: (
   }
 
   --border-width-default: 1px;
+  --line-height-body: 1.75;
 
   @include mixin.color-scheme("light") {
     --background-color-body: #fff;
