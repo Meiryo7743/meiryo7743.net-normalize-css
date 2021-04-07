@@ -1,17 +1,13 @@
 @use "./elements/all";
 @use "./elements/main-root";
-@use "./elements/document-metadata";
 @use "./elements/sectioning-root";
 @use "./elements/content-sectioning";
 @use "./elements/text-content";
 @use "./elements/inline-text-semantics";
 @use "./elements/image-and-multimedia";
 @use "./elements/embedded-content";
-@use "./elements/svg-and-mathml";
 @use "./elements/scripting";
 @use "./elements/demarcating-edits";
 @use "./elements/table-content";
 @use "./elements/forms";
 @use "./elements/interactive-elements";
-@use "./elements/web-components";
-@use "./elements/obsolete-and-deprecated-elements";

@@ -1,12 +1,6 @@
 @use "../../../global/extends";
 
 html {
-  // area {
-  // }
-
-  // audio {
-  // }
-
   img {
     @extend %element-type-inline;
 
@@ -15,12 +9,6 @@ html {
     max-inline-size: 100%;
     vertical-align: bottom;
   }
-
-  // map {
-  // }
-
-  // track {
-  // }
 
   video {
   }
