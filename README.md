@@ -1,3 +1,8 @@
+- [English](./README.md)
+- [日本語](./README.ja.md)
+
+---
+
 # meiryo7743.net-normalize-css
 
 A modern normalize CSS mainly designed for [Meiryo7743.net](https://meiryo7743.net). No needed to add any special classes. It makes elements' initial style the same in different browsers by overwriting user agent stylesheets, and also sets proper styles in a specific language.
