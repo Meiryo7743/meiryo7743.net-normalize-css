@@ -1,10 +1,7 @@
-html,
-blockquote {
-  &:lang(zh) {
-    del {
-    }
+html:lang(zh) {
+  del {
+  }
 
-    ins {
-    }
+  ins {
   }
 }

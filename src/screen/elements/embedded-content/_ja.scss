@@ -1,25 +1,22 @@
-html,
-blockquote {
-  &:lang(ja) {
-    // embed {
-    // }
+html:lang(ja) {
+  // embed {
+  // }
 
-    iframe {
-    }
-
-    object {
-    }
-
-    param {
-    }
-
-    // picture {
-    // }
-
-    // portal {
-    // }
-
-    // source {
-    // }
+  iframe {
   }
+
+  object {
+  }
+
+  param {
+  }
+
+  // picture {
+  // }
+
+  // portal {
+  // }
+
+  // source {
+  // }
 }

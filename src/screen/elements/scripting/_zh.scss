@@ -1,13 +1,10 @@
-html,
-blockquote {
-  &:lang(zh) {
-    canvas {
-    }
+html:lang(zh) {
+  canvas {
+  }
 
-    // noscript {
-    // }
+  // noscript {
+  // }
 
-    script {
-    }
+  script {
   }
 }

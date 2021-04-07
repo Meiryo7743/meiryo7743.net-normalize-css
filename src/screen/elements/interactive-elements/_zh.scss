@@ -1,16 +1,13 @@
-html,
-blockquote {
-  &:lang(zh) {
-    details {
-    }
+html:lang(zh) {
+  details {
+  }
 
-    dialog {
-    }
+  dialog {
+  }
 
-    // menu {
-    // }
+  // menu {
+  // }
 
-    summary {
-    }
+  summary {
   }
 }

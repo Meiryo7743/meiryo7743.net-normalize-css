@@ -1,10 +1,7 @@
-html,
-blockquote {
-  &:lang(ja) {
-    del {
-    }
+html:lang(ja) {
+  del {
+  }
 
-    ins {
-    }
+  ins {
   }
 }

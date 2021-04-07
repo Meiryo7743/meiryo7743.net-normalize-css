@@ -1,13 +1,10 @@
-html,
-blockquote {
-  &:lang(en) {
-    canvas {
-    }
+html:lang(en) {
+  canvas {
+  }
 
-    // noscript {
-    // }
+  // noscript {
+  // }
 
-    script {
-    }
+  script {
   }
 }

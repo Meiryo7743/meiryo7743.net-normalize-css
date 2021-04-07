@@ -56,7 +56,8 @@ html {
     @extend %no-margin;
     @extend %no-padding;
 
-    border-block-start: solid var(--border-width-default) var(--border-color-default);
+    border-block-start: solid var(--border-width-default)
+      var(--border-color-default);
   }
 
   th {
@@ -74,7 +75,8 @@ html {
     @extend %no-margin;
     @extend %no-padding;
 
-    border-block-end: solid var(--border-width-default) var(--border-color-default);
+    border-block-end: solid var(--border-width-default)
+      var(--border-color-default);
   }
 
   tr {

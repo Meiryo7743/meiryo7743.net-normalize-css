@@ -1,35 +1,32 @@
-html,
-blockquote {
-  &:lang(ja) {
-    caption {
-    }
+html:lang(ja) {
+  caption {
+  }
 
-    col {
-    }
+  col {
+  }
 
-    colgroup {
-    }
+  colgroup {
+  }
 
-    table {
-    }
+  table {
+  }
 
-    tbody {
-    }
+  tbody {
+  }
 
-    td {
-    }
+  td {
+  }
 
-    tfoot {
-    }
+  tfoot {
+  }
 
-    th {
-      font-family: var(--font-family-sans-serif);
-    }
+  th {
+    font-family: var(--font-family-sans-serif);
+  }
 
-    thead {
-    }
+  thead {
+  }
 
-    tr {
-    }
+  tr {
   }
 }

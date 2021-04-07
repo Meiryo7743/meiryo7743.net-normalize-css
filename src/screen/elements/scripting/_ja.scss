@@ -1,13 +1,10 @@
-html,
-blockquote {
-  &:lang(ja) {
-    canvas {
-    }
+html:lang(ja) {
+  canvas {
+  }
 
-    // noscript {
-    // }
+  // noscript {
+  // }
 
-    script {
-    }
+  script {
   }
 }

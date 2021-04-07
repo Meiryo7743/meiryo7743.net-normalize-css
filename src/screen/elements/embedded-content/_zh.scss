@@ -1,25 +1,22 @@
-html,
-blockquote {
-  &:lang(zh) {
-    // embed {
-    // }
+html:lang(zh) {
+  // embed {
+  // }
 
-    iframe {
-    }
-
-    object {
-    }
-
-    param {
-    }
-
-    // picture {
-    // }
-
-    // portal {
-    // }
-
-    // source {
-    // }
+  iframe {
   }
+
+  object {
+  }
+
+  param {
+  }
+
+  // picture {
+  // }
+
+  // portal {
+  // }
+
+  // source {
+  // }
 }

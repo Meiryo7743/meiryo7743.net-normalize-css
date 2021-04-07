@@ -1,16 +1,13 @@
-html,
-blockquote {
-  &:lang(en) {
-    details {
-    }
+html:lang(en) {
+  details {
+  }
 
-    dialog {
-    }
+  dialog {
+  }
 
-    // menu {
-    // }
+  // menu {
+  // }
 
-    summary {
-    }
+  summary {
   }
 }
