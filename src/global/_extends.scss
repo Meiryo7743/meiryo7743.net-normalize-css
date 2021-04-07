@@ -38,3 +38,37 @@
 %element-type-hidden {
   display: none;
 }
+
+%element-type-form {
+  @extend %no-margin;
+  @extend %no-padding;
+
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border-radius: 0;
+  border: none;
+  color: inherit;
+  display: inline-block;
+  font: inherit;
+  vertical-align: bottom;
+}
+
+%element-type-form-input {
+  background: var(--background-color-input);
+  font-family: var(--font-family-monospace);
+
+  &::placeholder {
+    color: inherit;
+    opacity: 1;
+  }
+}
+
+%element-type-form-button {
+  background: var(--background-color-button);
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
