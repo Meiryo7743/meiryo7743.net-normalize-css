@@ -1,8 +1,8 @@
 @use "../../../global/extends";
 
 html {
-  embed {
-  }
+  // embed {
+  // }
 
   iframe {
     @extend %element-type-block;
@@ -19,12 +19,12 @@ html {
   param {
   }
 
-  picture {
-  }
+  // picture {
+  // }
 
-  portal {
-  }
+  // portal {
+  // }
 
-  source {
-  }
+  // source {
+  // }
 }
