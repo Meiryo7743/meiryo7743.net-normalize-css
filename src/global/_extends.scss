@@ -55,7 +55,7 @@
 }
 
 %element-type-form-input {
-  background: var(--background-color-input);
+  background: var(--background-color-form);
   font-family: var(--font-family-monospace);
 
   &::placeholder {
@@ -65,7 +65,7 @@
 }
 
 %element-type-form-button {
-  background: var(--background-color-button);
+  background: var(--background-color-form);
   user-select: none;
 
   &:hover {
