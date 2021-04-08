@@ -30,6 +30,7 @@ html {
   figcaption {
     @extend %element-type-block;
 
+    break-before: avoid;
     display: table;
     margin-block-start: 0.5rem;
     margin-inline-end: auto;

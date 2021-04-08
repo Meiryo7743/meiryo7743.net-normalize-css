@@ -26,6 +26,7 @@ html {
   h1 {
     @extend %element-type-heading;
 
+    break-after: avoid;
     font-size: calc(var(--font-size-xxx-large) * 1rem);
     margin-block-end: 0.5rem;
     margin-block-start: 1rem;
@@ -34,6 +35,7 @@ html {
   h2 {
     @extend %element-type-heading;
 
+    break-after: avoid;
     font-size: calc(var(--font-size-xx-large) * 1rem);
     margin-block-end: 0.5rem;
     margin-block-start: 1rem;
@@ -42,6 +44,7 @@ html {
   h3 {
     @extend %element-type-heading;
 
+    break-after: avoid;
     font-size: calc(var(--font-size-x-large) * 1rem);
     margin-block-end: 0.5rem;
     margin-block-start: 1rem;
@@ -50,18 +53,23 @@ html {
   h4 {
     @extend %element-type-heading;
 
+    break-after: avoid;
     font-size: calc(var(--font-size-large) * 1rem);
     margin-block-start: 1rem;
   }
 
   h5 {
     @extend %element-type-heading;
+
+    break-after: avoid;
     font-size: 1rem;
     margin-block-start: 1rem;
   }
 
   h6 {
     @extend %element-type-heading;
+
+    break-after: avoid;
     font-size: 1rem;
     margin-block-start: 1rem;
   }
