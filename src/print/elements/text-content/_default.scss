@@ -93,7 +93,7 @@ html {
     padding-inline-end: 0.75rem;
     padding-inline-start: 0.75rem;
     text-align: start;
-    white-space: pre;
+    white-space: pre-wrap;
 
     code {
       @extend %element-type-block;
