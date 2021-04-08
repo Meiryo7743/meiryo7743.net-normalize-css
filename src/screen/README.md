@@ -150,7 +150,7 @@
 ### Interactive elements
 
 - `<details>`
-- `<dialog>`
+- ~~`<dialog>`~~
 - ~~`<menu>`~~
 - `<summary>`
 
