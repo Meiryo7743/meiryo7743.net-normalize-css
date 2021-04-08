@@ -6,14 +6,6 @@ html {
     @extend %element-type-form;
   }
 
-  datalist {
-    @extend %element-type-form;
-  }
-
-  fieldset {
-    @extend %element-type-form;
-  }
-
   form {
     @extend %element-type-block;
   }
@@ -25,33 +17,12 @@ html {
       @extend %element-type-form-button;
     }
 
-    &[type="checkbox"] {
-    }
-
-    &[type="color"] {
-    }
-
-    &[type="date"] {
-    }
-
-    &[type="datetime-local"] {
-    }
-
     &[type="email"] {
       @extend %element-type-form-input;
     }
 
-    &[type="file"] {
-    }
-
     &[type="hidden"] {
       @extend %element-type-hidden;
-    }
-
-    &[type="image"] {
-    }
-
-    &[type="month"] {
     }
 
     &[type="number"] {
@@ -60,12 +31,6 @@ html {
 
     &[type="password"] {
       @extend %element-type-form-input;
-    }
-
-    &[type="radio"] {
-    }
-
-    &[type="range"] {
     }
 
     &[type="reset"] {
@@ -81,57 +46,26 @@ html {
     }
 
     &[type="tel"] {
+      @extend %element-type-form-input;
     }
 
     &[type="text"] {
       @extend %element-type-form-input;
     }
 
-    &[type="time"] {
-    }
-
     &[type="url"] {
       @extend %element-type-form-input;
     }
-
-    &[type="week"] {
-    }
-  }
-
-  label {
-    @extend %element-type-form;
-  }
-
-  legend {
-    @extend %element-type-form;
-  }
-
-  meter {
-    @extend %element-type-form;
-  }
-
-  optgroup {
-    @extend %element-type-form;
-  }
-
-  option {
-    @extend %element-type-form;
   }
 
   output {
     @extend %element-type-form;
-  }
 
-  progress {
-    @extend %element-type-form;
-  }
-
-  select {
-    @extend %element-type-form;
+    font-family: var(--font-family-monospace);
   }
 
   textarea {
-    @extend %element-type-form-button;
+    @extend %element-type-form-input;
     @extend %element-type-form;
   }
 }
