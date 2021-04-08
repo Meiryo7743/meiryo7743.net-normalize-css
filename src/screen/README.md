@@ -133,18 +133,18 @@
 ### Forms
 
 - `<button>`
-- `<datalist>`
-- `<fieldset>`
+- ~~`<datalist>`~~
+- ~~`<fieldset>`~~
 - `<form>`
 - `<input>`
-- `<label>`
-- `<legend>`
-- `<meter>`
-- `<optgroup>`
-- `<option>`
+- ~~`<label>`~~
+- ~~`<legend>`~~
+- ~~`<meter>`~~
+- ~~`<optgroup>`~~
+- ~~`<option>`~~
 - `<output>`
-- `<progress>`
-- `<select>`
+- ~~`<progress>`~~
+- ~~`<select>`~~
 - `<textarea>`
 
 ### Interactive elements
