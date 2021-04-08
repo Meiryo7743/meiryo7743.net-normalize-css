@@ -24,7 +24,6 @@ html {
   dt {
     @extend %element-type-block;
 
-    font-family: var(--font-family-sans-serif);
     font-weight: var(--font-weight-bold);
   }
 
@@ -42,7 +41,7 @@ html {
 
     margin-block-end: 1rem;
 
-    img{
+    img {
       @extend %element-type-block;
     }
   }
