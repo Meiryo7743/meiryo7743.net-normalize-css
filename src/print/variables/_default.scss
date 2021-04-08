@@ -39,7 +39,6 @@ $_FONT_WEIGHTS: (
 
 $_FONT_FAMILY: (
   "monospace": (
-    "Cascadia Code",
     "SFMono-Regular",
     "Consolas",
     "Liberation Mono",
@@ -71,14 +70,10 @@ $_FONT_FAMILY: (
     --font-family-#{$kind}: #{$fonts};
   }
 
-  --background-color-body: #fff;
-  --background-color-code: #eee;
+  --background-color-body: transparent;
   --background-color-form: #eee;
-  --background-color-pre: #eee;
-  --border-color-default: #ccc;
+  --border-color-default: #000;
   --border-width-default: 1pt;
-  --color-a-visited: var(--color-blue);
-  --color-a: var(--color-blue);
   --color-body: #000;
   --line-height-body: 1.75;
 }
