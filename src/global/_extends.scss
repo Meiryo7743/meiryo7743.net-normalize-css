@@ -57,6 +57,10 @@
 %element-type-form-input {
   background: var(--background-color-form);
   font-family: var(--font-family-monospace);
+  padding-block-end: 0.375rem;
+  padding-block-start: 0.375rem;
+  padding-inline-end: 0.75rem;
+  padding-inline-start: 0.75rem;
 
   &::placeholder {
     color: inherit;
@@ -66,6 +70,10 @@
 
 %element-type-form-button {
   background: var(--background-color-form);
+  padding-block-end: 0.375rem;
+  padding-block-start: 0.375rem;
+  padding-inline-end: 0.75rem;
+  padding-inline-start: 0.75rem;
   user-select: none;
 
   &:hover {
