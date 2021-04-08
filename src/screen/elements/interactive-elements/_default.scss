@@ -7,13 +7,13 @@ html {
     border: solid var(--border-width-default) var(--border-color-default);
   }
 
-  dialog {
-    @extend %element-type-block;
+  // dialog {
+  //   @extend %element-type-block;
 
-    &:not([open]) {
-      @extend %element-type-hidden;
-    }
-  }
+  //   &:not([open]) {
+  //     @extend %element-type-hidden;
+  //   }
+  // }
 
   summary {
     @extend %element-type-block;
