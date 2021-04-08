@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run build:screen && npm run build:print",
-    "build:screen": "sass ./src/screen.scss ./dist/normalize-screen.min.css --style=compressed --no-source-map",
-    "build:print": "sass ./src/print.scss ./dist/normalize-print.min.css --style=compressed --no-source-map",
+    "build:screen": "sass ./src/screen.scss ./dist/normalize/screen.min.css --style=compressed --no-source-map",
+    "build:print": "sass ./src/print.scss ./dist/normalize/print.min.css --style=compressed --no-source-map",
     "prepare": "husky install"
   },
   "devDependencies": {
