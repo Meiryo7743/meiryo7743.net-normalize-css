@@ -4,8 +4,9 @@ html {
   canvas {
     @extend %element-type-inline;
 
+    break-inside: avoid;
     image-rendering: auto;
-    max-block-size: 100%;
+    max-block-size: 100vh;
     max-inline-size: 100%;
     vertical-align: bottom;
   }
