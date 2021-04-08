@@ -24,8 +24,8 @@ html {
   table {
     @extend %padding-0;
 
-    border-block-end: solid var(--border-width) var(--color-border);
-    border-block-start: solid var(--border-width) var(--color-border);
+    border-block-end: solid var(--border-width-default) var(--border-color-default);
+    border-block-start: solid var(--border-width-default) var(--border-color-default);
     border-collapse: collapse;
     border-inline-end: none;
     border-inline-start: none;

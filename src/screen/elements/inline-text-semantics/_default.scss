@@ -9,15 +9,15 @@ html {
 
     &:link {
       color: var(--color-a);
+
+      &:hover {
+        border-block-end: dashed var(--border-width-default);
+        cursor: pointer;
+      }
     }
 
     &:visited {
       color: var(--color-a-visited);
-    }
-
-    &[href]:hover {
-      border-block-end: dashed var(--border-width);
-      cursor: pointer;
     }
   }
 
