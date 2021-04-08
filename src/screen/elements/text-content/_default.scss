@@ -41,6 +41,10 @@ html {
     @extend %element-type-block;
 
     margin-block-end: 1rem;
+
+    img{
+      @extend %element-type-block;
+    }
   }
 
   hr {
