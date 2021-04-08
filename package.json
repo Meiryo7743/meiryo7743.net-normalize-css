@@ -10,9 +10,9 @@
     "build:print": "sass ./src/print.scss ./dist/normalize-print.min.css --style=compressed --no-source-map"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "2.2.1"
   },
   "dependencies": {
-    "sass": "^1.32.8"
+    "sass": "1.32.8"
   }
 }
