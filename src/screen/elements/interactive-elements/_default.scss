@@ -3,6 +3,8 @@
 html {
   details {
     @extend %element-type-block;
+
+    border: solid var(--border-width-default) var(--border-color-default);
   }
 
   dialog {
@@ -15,6 +17,11 @@ html {
 
   summary {
     @extend %element-type-block;
+
+    padding-block-end: 0.375rem;
+    padding-block-start: 0.375rem;
+    padding-inline-end: 0.75rem;
+    padding-inline-start: 0.75rem;
 
     &:hover {
       cursor: pointer;
