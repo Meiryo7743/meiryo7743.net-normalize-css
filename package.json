@@ -7,9 +7,12 @@
   "scripts": {
     "build": "npm run build:screen && npm run build:print",
     "build:screen": "sass ./src/screen.scss ./dist/normalize-screen.min.css --style=compressed --no-source-map",
-    "build:print": "sass ./src/print.scss ./dist/normalize-print.min.css --style=compressed --no-source-map"
+    "build:print": "sass ./src/print.scss ./dist/normalize-print.min.css --style=compressed --no-source-map",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "6.0.0",
+    "lint-staged": "10.5.4",
     "prettier": "2.2.1"
   },
   "dependencies": {
