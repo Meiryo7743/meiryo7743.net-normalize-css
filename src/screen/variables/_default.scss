@@ -79,6 +79,7 @@ $_FONT_FAMILY: (
   @include mixin.color-scheme("light") {
     --background-color-body: #fff;
     --background-color-form: #eee;
+    --background-color-pre: #eee;
     --border-color-default: #ccc;
     --color-a-visited: var(--color-purple);
     --color-a: var(--color-blue);
@@ -88,6 +89,7 @@ $_FONT_FAMILY: (
   @include mixin.color-scheme("dark") {
     --background-color-body: #222;
     --background-color-form: #111;
+    --background-color-pre: #111;
     --border-color-default: #666;
     --color-a-visited: var(--color-light-purple);
     --color-a: var(--color-sky-blue);
