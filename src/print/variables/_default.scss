@@ -1,0 +1,100 @@
+@use "../../global/mixin";
+
+// https://jfly.uni-koeln.de/colorset/CUD_color_set_GuideBook_2018.pdf
+$_COLORS: (
+  "beige": #facd93,
+  "blue": #006fbc,
+  "brown": #8a3b2c,
+  "cream": #fff9b0,
+  "gray": #7d828d,
+  "green": #04af7a,
+  "light-gray": #dfe1e2,
+  "light-green": #97cea2,
+  "light-pink": #f9d1cb,
+  "light-purple": #c6b7d9,
+  "light-sky-blue": #bae3f9,
+  "light-yellow-green": #cfdd4c,
+  "orange": #f5a200,
+  "pink": #f0908a,
+  "purple": #b71a86,
+  "red": #eb6120,
+  "sky-blue": #6bc8f3,
+  "yellow": #fff100,
+);
+
+$_FONT_SIZES: (
+  "xxx-small": 0.5,
+  "xx-small": 0.7,
+  "x-small": 0.8,
+  "small": 0.9,
+  "medium": 1,
+  "large": 1.2,
+  "x-large": 1.44,
+  "xx-large": 1.728,
+  "xxx-large": 2.074,
+);
+
+$_FONT_WEIGHTS: (
+  "normal": 400,
+  "bold": 700,
+);
+
+$_FONT_FAMILY: (
+  "monospace": (
+    "Cascadia Code",
+    "SFMono-Regular",
+    "Consolas",
+    "Liberation Mono",
+    "Menlo",
+    monospace,
+  ),
+  "sans-serif": sans-serif,
+  "serif": serif,
+);
+
+:root {
+  @each $color, $hex in $_COLORS {
+    --color-#{$color}: #{$hex};
+  }
+
+  @each $size, $value in $_FONT_SIZES {
+    --font-size-#{$size}: #{$value};
+  }
+
+  @each $weight, $value in $_FONT_WEIGHTS {
+    --font-weight-#{$weight}: #{$value};
+  }
+
+  @each $weight, $value in $_FONT_WEIGHTS {
+    --font-weight-#{$weight}: #{$value};
+  }
+
+  @each $kind, $fonts in $_FONT_FAMILY {
+    --font-family-#{$kind}: #{$fonts};
+  }
+
+  --border-width-default: 1px;
+  --line-height-body: 1.75;
+
+  @include mixin.color-scheme("light") {
+    --background-color-body: #fff;
+    --background-color-code: #eee;
+    --background-color-form: #eee;
+    --background-color-pre: #eee;
+    --border-color-default: #ccc;
+    --color-a-visited: var(--color-purple);
+    --color-a: var(--color-blue);
+    --color-body: #222;
+  }
+
+  @include mixin.color-scheme("dark") {
+    --background-color-body: #222;
+    --background-color-code: #111;
+    --background-color-form: #111;
+    --background-color-pre: #111;
+    --border-color-default: #666;
+    --color-a-visited: var(--color-light-purple);
+    --color-a: var(--color-sky-blue);
+    --color-body: #ddd;
+  }
+}
