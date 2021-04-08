@@ -4,4 +4,7 @@ html {
   @extend %element-type-block;
 
   font-size: 10.5pt;
+  inline-size: 40rem;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
 }
