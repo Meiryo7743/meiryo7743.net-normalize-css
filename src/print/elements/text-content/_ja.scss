@@ -1,0 +1,43 @@
+@use "../../../global/extends";
+
+html:lang(ja) {
+  blockquote {
+    padding-inline-end: 0;
+  }
+
+  dd {
+  }
+
+  dl {
+  }
+
+  dt {
+    font-family: var(--font-family-sans-serif);
+  }
+
+  figcaption {
+  }
+
+  figure {
+  }
+
+  hr {
+  }
+
+  li {
+  }
+
+  ol {
+  }
+
+  p {
+    margin-block-end: 0;
+    text-indent: 1em;
+  }
+
+  pre {
+  }
+
+  ul {
+  }
+}

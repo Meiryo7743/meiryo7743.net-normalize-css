@@ -1,0 +1,149 @@
+@use "../../../global/extends";
+
+html {
+  a {
+    @extend %element-type-inline;
+
+    color: inherit;
+    text-decoration: none;
+
+    &:link {
+      border-block-end: dashed var(--border-width-default);
+    }
+  }
+
+  abbr {
+    @extend %element-type-inline;
+  }
+
+  b {
+    @extend %element-type-inline;
+
+    font-weight: var(--font-weight-bold);
+  }
+
+  cite {
+    @extend %element-type-inline;
+
+    font-style: italic;
+  }
+
+  code {
+    @extend %element-type-inline;
+
+    font-family: var(--font-family-monospace);
+  }
+
+  data {
+    @extend %element-type-inline;
+  }
+
+  dfn {
+    @extend %element-type-inline;
+
+    font-style: italic;
+  }
+
+  em {
+    @extend %element-type-inline;
+
+    font-style: italic;
+  }
+
+  i {
+    @extend %element-type-inline;
+
+    font-style: italic;
+  }
+
+  kbd {
+    @extend %element-type-inline;
+
+    font-family: var(--font-family-monospace);
+  }
+
+  mark {
+    @extend %element-type-inline;
+  }
+
+  q {
+    @extend %element-type-inline;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+
+  rp {
+    @extend %element-type-ruby;
+  }
+
+  rt {
+    @extend %element-type-ruby;
+
+    text-transform: full-size-kana;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  ruby {
+    @extend %element-type-ruby;
+  }
+
+  s {
+    @extend %element-type-inline;
+
+    color: var(--color-gray);
+    text-decoration: line-through double;
+  }
+
+  samp {
+    @extend %element-type-inline;
+
+    font-family: var(--font-family-monospace);
+  }
+
+  small {
+    @extend %element-type-inline;
+
+    font-size: 1em;
+  }
+
+  strong {
+    @extend %element-type-inline;
+
+    font-weight: var(--font-weight-bold);
+  }
+
+  sub {
+    @extend %element-type-inline;
+
+    font-size: calc(var(--font-size-x-small) * 1em);
+    vertical-align: sub;
+  }
+
+  sup {
+    @extend %element-type-inline;
+
+    font-size: calc(var(--font-size-x-small) * 1em);
+    vertical-align: super;
+  }
+
+  time {
+    @extend %element-type-inline;
+  }
+
+  u {
+    @extend %element-type-inline;
+
+    text-decoration: underline wavy;
+  }
+
+  var {
+    @extend %element-type-inline;
+
+    font-family: var(--font-family-serif);
+    font-style: italic;
+  }
+}

@@ -1,0 +1,77 @@
+@use "../../../global/extends";
+
+html:lang(ja) {
+  a {
+  }
+
+  abbr {
+  }
+
+  b {
+    font-family: var(--font-family-sans-serif);
+  }
+
+  cite {
+  }
+
+  code {
+  }
+
+  data {
+  }
+
+  dfn {
+  }
+
+  em {
+  }
+
+  i {
+  }
+
+  kbd {
+  }
+
+  mark {
+  }
+
+  q {
+  }
+
+  rp {
+  }
+
+  rt {
+  }
+
+  ruby {
+  }
+
+  s {
+  }
+
+  samp {
+  }
+
+  small {
+  }
+
+  strong {
+    font-family: var(--font-family-sans-serif);
+  }
+
+  sub {
+  }
+
+  sup {
+  }
+
+  time {
+  }
+
+  u {
+  }
+
+  var {
+  }
+}
