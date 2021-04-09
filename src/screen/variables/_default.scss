@@ -65,10 +65,6 @@ $_FONT_FAMILY: (
     --font-weight-#{$weight}: #{$value};
   }
 
-  @each $weight, $value in $_FONT_WEIGHTS {
-    --font-weight-#{$weight}: #{$value};
-  }
-
   @each $kind, $fonts in $_FONT_FAMILY {
     --font-family-#{$kind}: #{$fonts};
   }
