@@ -30,10 +30,7 @@ html {
   figcaption {
     @extend %element-type-block;
 
-    display: table;
     margin-block-start: 0.5rem;
-    margin-inline-end: auto;
-    margin-inline-start: auto;
   }
 
   figure {
@@ -41,8 +38,10 @@ html {
 
     margin-block-end: 1rem;
 
-    img {
-      @extend %element-type-block;
+    > * {
+      display: table;
+      margin-inline-end: auto;
+      margin-inline-start: auto;
     }
   }
 
