@@ -42,7 +42,7 @@ html {
     margin-block-end: 1rem;
     margin-block-start: 1rem;
 
-    * {
+    > * {
       display: table;
       margin-inline-end: auto;
       margin-inline-start: auto;
