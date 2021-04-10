@@ -1,64 +1,64 @@
 @use "../../../global/extends";
 
 html:lang(en) {
-}
-address {
-  font-style: italic;
-}
-
-article {
-}
-
-aside {
-}
-
-footer {
-}
-
-header {
-}
-
-h1 {
-  + p {
-    text-indent: 0;
+  address {
+    font-style: italic;
   }
-}
 
-h2 {
-  + p {
-    text-indent: 0;
+  article {
   }
-}
 
-h3 {
-  + p {
-    text-indent: 0;
+  aside {
   }
-}
 
-h4 {
-  + p {
-    text-indent: 0;
+  footer {
   }
-}
 
-h5 {
-  + p {
-    text-indent: 0;
+  header {
   }
-}
 
-h6 {
-  + p {
-    text-indent: 0;
+  h1 {
+    + p {
+      text-indent: 0;
+    }
   }
-}
 
-main {
-}
+  h2 {
+    + p {
+      text-indent: 0;
+    }
+  }
 
-nav {
-}
+  h3 {
+    + p {
+      text-indent: 0;
+    }
+  }
 
-section {
+  h4 {
+    + p {
+      text-indent: 0;
+    }
+  }
+
+  h5 {
+    + p {
+      text-indent: 0;
+    }
+  }
+
+  h6 {
+    + p {
+      text-indent: 0;
+    }
+  }
+
+  main {
+  }
+
+  nav {
+  }
+
+  section {
+  }
 }
