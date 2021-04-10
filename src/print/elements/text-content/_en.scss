@@ -30,10 +30,10 @@ html:lang(en) {
 
   p {
     margin-block-end: 0;
-    text-indent: 0.5in;
+    margin-block-start: 0;
 
-    &:first-of-type {
-      text-indent: 0;
+    &:not(:first-of-type) {
+      text-indent: 0.5in;
     }
   }
 
