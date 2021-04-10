@@ -81,6 +81,8 @@ $_FONT_FAMILY: (
     --color-a-visited: var(--color-purple);
     --color-a: var(--color-blue);
     --color-body: #222;
+
+    color-scheme: light;
   }
 
   @include mixin.color-scheme("dark") {
@@ -92,5 +94,7 @@ $_FONT_FAMILY: (
     --color-a-visited: var(--color-light-purple);
     --color-a: var(--color-sky-blue);
     --color-body: #ddd;
+
+    color-scheme: dark;
   }
 }
