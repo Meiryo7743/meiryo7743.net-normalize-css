@@ -39,7 +39,7 @@ html {
 
     margin-block-end: 1rem;
 
-    > * {
+    * {
       display: table;
       margin-inline-end: auto;
       margin-inline-start: auto;
@@ -54,6 +54,7 @@ html {
       var(--border-color-default);
     border-inline-end: none;
     border-inline-start: none;
+    break-before: avoid;
     margin-block-end: 1rem;
   }
 
