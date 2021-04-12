@@ -1,165 +1,163 @@
 @use "../../global/extends";
 @use "../../global/mixin";
 
-html {
-  a {
-    @extend %element-type-inline;
+a {
+  @extend %element-type-inline;
 
-    cursor: auto;
-    text-decoration: none;
+  cursor: auto;
+  text-decoration: none;
 
-    &:link {
-      color: var(--color-a);
+  &:link {
+    color: var(--color-a);
 
-      &:hover {
-        border-block-end: dashed var(--border-width-default);
-        cursor: pointer;
-      }
-    }
-
-    &:visited {
-      color: var(--color-a-visited);
+    &:hover {
+      border-block-end: dashed var(--border-width-default);
+      cursor: pointer;
     }
   }
 
-  abbr {
-    @extend %element-type-inline;
+  &:visited {
+    color: var(--color-a-visited);
   }
+}
 
-  b {
-    @extend %element-type-inline;
+abbr {
+  @extend %element-type-inline;
+}
 
-    font-weight: var(--font-weight-bold);
+b {
+  @extend %element-type-inline;
+
+  font-weight: var(--font-weight-bold);
+}
+
+cite {
+  @extend %element-type-inline;
+
+  font-style: italic;
+}
+
+code {
+  @extend %element-type-inline;
+
+  background: var(--background-color-code);
+  font-family: var(--font-family-monospace);
+  font-size: calc(var(--font-size-x-small) * 1em);
+  padding-block-end: 0.1875rem;
+  padding-block-start: 0.1875rem;
+  padding-inline-end: 0.375rem;
+  padding-inline-start: 0.375rem;
+}
+
+data {
+  @extend %element-type-inline;
+}
+
+dfn {
+  @extend %element-type-inline;
+
+  font-style: italic;
+}
+
+em {
+  @extend %element-type-inline;
+
+  font-style: italic;
+}
+
+i {
+  @extend %element-type-inline;
+
+  font-style: italic;
+}
+
+kbd {
+  @extend %element-type-inline;
+
+  font-family: var(--font-family-monospace);
+}
+
+mark {
+  @extend %element-type-inline;
+}
+
+q {
+  @extend %element-type-inline;
+
+  &::before,
+  &::after {
+    content: none;
   }
+}
 
-  cite {
-    @extend %element-type-inline;
+rp {
+  @extend %element-type-ruby;
+}
 
-    font-style: italic;
-  }
+rt {
+  @extend %element-type-ruby;
 
-  code {
-    @extend %element-type-inline;
+  text-transform: full-size-kana;
+  user-select: none;
+  white-space: nowrap;
+}
 
-    background: var(--background-color-code);
-    font-family: var(--font-family-monospace);
-    font-size: calc(var(--font-size-x-small) * 1em);
-    padding-block-end: 0.1875rem;
-    padding-block-start: 0.1875rem;
-    padding-inline-end: 0.375rem;
-    padding-inline-start: 0.375rem;
-  }
+ruby {
+  @extend %element-type-ruby;
+}
 
-  data {
-    @extend %element-type-inline;
-  }
+s {
+  @extend %element-type-inline;
 
-  dfn {
-    @extend %element-type-inline;
+  color: var(--color-gray);
+  text-decoration: line-through double;
+}
 
-    font-style: italic;
-  }
+samp {
+  @extend %element-type-inline;
 
-  em {
-    @extend %element-type-inline;
+  font-family: var(--font-family-monospace);
+}
 
-    font-style: italic;
-  }
+small {
+  @extend %element-type-inline;
 
-  i {
-    @extend %element-type-inline;
+  font-size: 1em;
+}
 
-    font-style: italic;
-  }
+strong {
+  @extend %element-type-inline;
 
-  kbd {
-    @extend %element-type-inline;
+  font-weight: var(--font-weight-bold);
+}
 
-    font-family: var(--font-family-monospace);
-  }
+sub {
+  @extend %element-type-inline;
 
-  mark {
-    @extend %element-type-inline;
-  }
+  font-size: calc(var(--font-size-x-small) * 1em);
+  vertical-align: sub;
+}
 
-  q {
-    @extend %element-type-inline;
+sup {
+  @extend %element-type-inline;
 
-    &::before,
-    &::after {
-      content: none;
-    }
-  }
+  font-size: calc(var(--font-size-x-small) * 1em);
+  vertical-align: super;
+}
 
-  rp {
-    @extend %element-type-ruby;
-  }
+time {
+  @extend %element-type-inline;
+}
 
-  rt {
-    @extend %element-type-ruby;
+u {
+  @extend %element-type-inline;
 
-    text-transform: full-size-kana;
-    user-select: none;
-    white-space: nowrap;
-  }
+  text-decoration: underline wavy;
+}
 
-  ruby {
-    @extend %element-type-ruby;
-  }
+var {
+  @extend %element-type-inline;
 
-  s {
-    @extend %element-type-inline;
-
-    color: var(--color-gray);
-    text-decoration: line-through double;
-  }
-
-  samp {
-    @extend %element-type-inline;
-
-    font-family: var(--font-family-monospace);
-  }
-
-  small {
-    @extend %element-type-inline;
-
-    font-size: 1em;
-  }
-
-  strong {
-    @extend %element-type-inline;
-
-    font-weight: var(--font-weight-bold);
-  }
-
-  sub {
-    @extend %element-type-inline;
-
-    font-size: calc(var(--font-size-x-small) * 1em);
-    vertical-align: sub;
-  }
-
-  sup {
-    @extend %element-type-inline;
-
-    font-size: calc(var(--font-size-x-small) * 1em);
-    vertical-align: super;
-  }
-
-  time {
-    @extend %element-type-inline;
-  }
-
-  u {
-    @extend %element-type-inline;
-
-    text-decoration: underline wavy;
-  }
-
-  var {
-    @extend %element-type-inline;
-
-    font-family: var(--font-family-serif);
-    font-style: italic;
-  }
+  font-family: var(--font-family-serif);
+  font-style: italic;
 }

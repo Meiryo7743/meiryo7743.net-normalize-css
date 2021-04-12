@@ -1,16 +1,14 @@
 @use "../../global/extends";
 @use "../../global/mixin";
 
-html {
-  img {
-    @extend %element-type-inline;
+img {
+  @extend %element-type-inline;
 
-    image-rendering: auto;
-    max-block-size: 100%;
-    max-inline-size: 100%;
-    vertical-align: bottom;
-  }
+  image-rendering: auto;
+  max-block-size: 100%;
+  max-inline-size: 100%;
+  vertical-align: bottom;
+}
 
-  video {
-  }
+video {
 }

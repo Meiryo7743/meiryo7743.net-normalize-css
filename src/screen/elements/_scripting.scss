@@ -1,17 +1,15 @@
 @use "../../global/extends";
 @use "../../global/mixin";
 
-html {
-  canvas {
-    @extend %element-type-inline;
+canvas {
+  @extend %element-type-inline;
 
-    image-rendering: auto;
-    max-block-size: 100%;
-    max-inline-size: 100%;
-    vertical-align: bottom;
-  }
+  image-rendering: auto;
+  max-block-size: 100%;
+  max-inline-size: 100%;
+  vertical-align: bottom;
+}
 
-  script {
-    @extend %element-type-hidden;
-  }
+script {
+  @extend %element-type-hidden;
 }
