@@ -1,4 +1,15 @@
-@use "./sectioning-root/default";
-@use "./sectioning-root/en";
-@use "./sectioning-root/ja";
-// @use "./sectioning-root/zh";
+@use "../../../global/extends";
+
+html {
+  body {
+    @extend %element-type-block;
+
+    background: var(--background-color-body);
+    color: var(--color-body);
+    font-family: var(--font-family-sans-serif);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    overflow-wrap: break-word;
+    text-align: justify;
+  }
+}

@@ -1,4 +1,15 @@
-@use "./all/default";
-@use "./all/en";
-@use "./all/ja";
-// @use "./all/zh";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* > * {
+  &:first-child {
+    margin-block-start: 0 !important;
+  }
+
+  &:last-child {
+    margin-block-end: 0 !important;
+  }
+}

@@ -1,4 +1,7 @@
-@use "./main-root/default";
-@use "./main-root/en";
-@use "./main-root/ja";
-// @use "./main-root/zh";
+@use "../../../global/extends";
+
+html {
+  @extend %element-type-block;
+
+  font-size: calc(100% + 100vmin / 512);
+}
