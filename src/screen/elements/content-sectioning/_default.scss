@@ -1,10 +1,15 @@
 @use "../../../global/extends";
+@use "../../../global/mixin";
 
 html {
   address {
     @extend %element-type-block;
 
     font-style: normal;
+
+    @include mixin.lang(en) {
+      font-style: italic;
+    }
   }
 
   article {
