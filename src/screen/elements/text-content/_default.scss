@@ -1,4 +1,5 @@
 @use "../../../global/extends";
+@use "../../../global/mixin";
 
 html {
   blockquote {
@@ -7,6 +8,10 @@ html {
     margin-block-end: 1rem;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
+
+    @include mixin.lang(ja) {
+      padding-inline-end: 0;
+    }
   }
 
   dd {
