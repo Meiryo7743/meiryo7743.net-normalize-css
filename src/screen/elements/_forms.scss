@@ -1,4 +1,70 @@
-@use "./forms/default";
-@use "./forms/en";
-@use "./forms/ja";
-// @use "./forms/zh";
+@use "../../global/extends";
+@use "../../global/mixin";
+
+button {
+  @extend %element-type-form-button;
+  @extend %element-type-form;
+}
+
+form {
+  @extend %element-type-block;
+}
+
+input {
+  @extend %element-type-form;
+
+  &[type="button"] {
+    @extend %element-type-form-button;
+  }
+
+  &[type="email"] {
+    @extend %element-type-form-input;
+  }
+
+  &[type="hidden"] {
+    @extend %element-type-hidden;
+  }
+
+  &[type="number"] {
+    @extend %element-type-form-input;
+  }
+
+  &[type="password"] {
+    @extend %element-type-form-input;
+  }
+
+  &[type="reset"] {
+    @extend %element-type-form-button;
+  }
+
+  &[type="search"] {
+    @extend %element-type-form-input;
+  }
+
+  &[type="submit"] {
+    @extend %element-type-form-button;
+  }
+
+  &[type="tel"] {
+    @extend %element-type-form-input;
+  }
+
+  &[type="text"] {
+    @extend %element-type-form-input;
+  }
+
+  &[type="url"] {
+    @extend %element-type-form-input;
+  }
+}
+
+output {
+  @extend %element-type-form;
+
+  font-family: var(--font-family-monospace);
+}
+
+textarea {
+  @extend %element-type-form-input;
+  @extend %element-type-form;
+}

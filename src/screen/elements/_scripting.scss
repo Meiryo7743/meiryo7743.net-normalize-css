@@ -1,4 +1,15 @@
-@use "./scripting/default";
-@use "./scripting/en";
-@use "./scripting/ja";
-// @use "./scripting/zh";
+@use "../../global/extends";
+@use "../../global/mixin";
+
+canvas {
+  @extend %element-type-inline;
+
+  image-rendering: auto;
+  max-block-size: 100%;
+  max-inline-size: 100%;
+  vertical-align: bottom;
+}
+
+script {
+  @extend %element-type-hidden;
+}

@@ -1,4 +1,15 @@
-@use "./demarcating-edits/default";
-@use "./demarcating-edits/en";
-@use "./demarcating-edits/ja";
-// @use "./demarcating-edits/zh";
+@use "../../global/extends";
+@use "../../global/mixin";
+
+del {
+  @extend %element-type-inline;
+
+  color: var(--color-gray);
+  text-decoration: line-through double;
+}
+
+ins {
+  @extend %element-type-inline;
+
+  text-decoration: none;
+}

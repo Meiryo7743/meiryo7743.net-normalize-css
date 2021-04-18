@@ -1,4 +1,15 @@
-@use "./image-and-multimedia/default";
-@use "./image-and-multimedia/en";
-@use "./image-and-multimedia/ja";
-// @use "./image-and-multimedia/zh";
+@use "../../global/extends";
+@use "../../global/mixin";
+
+img {
+  @extend %element-type-inline;
+
+  break-inside: avoid;
+  image-rendering: auto;
+  max-block-size: 100vh;
+  max-inline-size: 100%;
+  vertical-align: bottom;
+}
+
+video {
+}

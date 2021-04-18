@@ -7,3 +7,9 @@
     }
   }
 }
+
+@mixin lang($code) {
+  @at-root :lang(#{$code}) & {
+    @content;
+  }
+}
