@@ -21,6 +21,10 @@ html {
     @extend %element-type-inline;
 
     font-weight: var(--font-weight-bold);
+
+    @include mixin.lang(ja) {
+      font-family: var(--font-family-sans-serif);
+    }
   }
 
   cite {
@@ -115,6 +119,10 @@ html {
     @extend %element-type-inline;
 
     font-weight: var(--font-weight-bold);
+
+    @include mixin.lang(ja) {
+      font-family: var(--font-family-sans-serif);
+    }
   }
 
   sub {

@@ -73,6 +73,10 @@ html {
     padding-inline-end: 0.75rem;
     padding-inline-start: 0.75rem;
     text-align: center;
+
+    @include mixin.lang(ja) {
+      font-weight: var(--font-weight-bold);
+    }
   }
 
   thead {
