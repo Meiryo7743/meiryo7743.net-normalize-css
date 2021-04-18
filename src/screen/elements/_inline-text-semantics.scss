@@ -41,6 +41,7 @@ code {
   @extend %element-type-inline;
 
   background: var(--background-color-code);
+  border: solid var(--border-width-default) var(--border-color-default);
   font-family: var(--font-family-monospace);
   font-size: calc(var(--font-size-x-small) * 1em);
   padding-block-end: 0.1875rem;

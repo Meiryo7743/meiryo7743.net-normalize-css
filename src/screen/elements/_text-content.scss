@@ -88,6 +88,7 @@ pre {
   @extend %element-type-block;
 
   background: var(--background-color-pre);
+  border: solid var(--border-width-default) var(--border-color-default);
   font-family: var(--font-family-monospace);
   margin-block-end: 1rem;
   overflow-x: auto;
@@ -102,6 +103,7 @@ pre {
     @extend %element-type-block;
 
     background: none;
+    border: none;
     font-size: 1em;
   }
 }
