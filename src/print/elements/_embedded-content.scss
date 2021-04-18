@@ -1,19 +1,17 @@
 @use "../../global/extends";
 @use "../../global/mixin";
 
-html {
-  iframe {
-    @extend %element-type-block;
+iframe {
+  @extend %element-type-block;
 
-    border: none;
-  }
+  border: none;
+}
 
-  object {
-    @extend %element-type-block;
+object {
+  @extend %element-type-block;
 
-    border: none;
-  }
+  border: none;
+}
 
-  param {
-  }
+param {
 }

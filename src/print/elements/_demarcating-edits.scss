@@ -1,17 +1,15 @@
 @use "../../global/extends";
 @use "../../global/mixin";
 
-html {
-  del {
-    @extend %element-type-inline;
+del {
+  @extend %element-type-inline;
 
-    color: var(--color-gray);
-    text-decoration: line-through double;
-  }
+  color: var(--color-gray);
+  text-decoration: line-through double;
+}
 
-  ins {
-    @extend %element-type-inline;
+ins {
+  @extend %element-type-inline;
 
-    text-decoration: none;
-  }
+  text-decoration: none;
 }

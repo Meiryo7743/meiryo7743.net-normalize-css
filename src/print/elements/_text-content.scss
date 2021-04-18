@@ -1,149 +1,147 @@
 @use "../../global/extends";
 @use "../../global/mixin";
 
-html {
-  blockquote {
-    @extend %element-type-block;
+blockquote {
+  @extend %element-type-block;
 
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-    padding-inline-start: 2rem;
-    padding-inline-end: 2rem;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
 
-    @include lang(ja) {
-      padding-inline-end: 0;
-    }
+  @include lang(ja) {
+    padding-inline-end: 0;
   }
+}
 
-  dd {
-    @extend %element-type-block;
+dd {
+  @extend %element-type-block;
 
-    padding-inline-start: 2rem;
+  padding-inline-start: 2rem;
+}
+
+dl {
+  @extend %element-type-block;
+
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+}
+
+dt {
+  @extend %element-type-block;
+
+  font-weight: var(--font-weight-bold);
+
+  @include lang(ja) {
+    font-family: var(--font-family-sans-serif);
   }
+}
 
-  dl {
-    @extend %element-type-block;
+figcaption {
+  @extend %element-type-block;
 
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
+  break-before: avoid;
+  margin-block-start: 0.5rem;
+}
+
+figure {
+  @extend %element-type-block;
+
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+
+  > * {
+    display: table;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
+}
 
-  dt {
-    @extend %element-type-block;
+hr {
+  @extend %element-type-block;
 
-    font-weight: var(--font-weight-bold);
+  border-block-end: none;
+  border-block-start: solid var(--border-width-default)
+    var(--border-color-default);
+  border-inline-end: none;
+  border-inline-start: none;
+  break-before: avoid;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+}
 
-    @include lang(ja) {
-      font-family: var(--font-family-sans-serif);
-    }
-  }
+li {
+  @extend %element-type-block;
 
-  figcaption {
-    @extend %element-type-block;
+  display: list-item;
+}
 
-    break-before: avoid;
-    margin-block-start: 0.5rem;
-  }
+ol {
+  @extend %element-type-block;
 
-  figure {
-    @extend %element-type-block;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  padding-inline-start: 2rem;
 
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-
-    > * {
-      display: table;
-      margin-inline-end: auto;
-      margin-inline-start: auto;
-    }
-  }
-
-  hr {
-    @extend %element-type-block;
-
-    border-block-end: none;
-    border-block-start: solid var(--border-width-default)
-      var(--border-color-default);
-    border-inline-end: none;
-    border-inline-start: none;
-    break-before: avoid;
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-  }
-
-  li {
-    @extend %element-type-block;
-
-    display: list-item;
-  }
-
-  ol {
-    @extend %element-type-block;
-
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-    padding-inline-start: 2rem;
-
-    ol,
-    ul {
-      margin-block-end: 0;
-      margin-block-start: 0;
-    }
-  }
-
-  p {
-    @extend %element-type-block;
-
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-
-    @include lang(en) {
-      margin-block-end: 0;
-      margin-block-start: 0;
-      text-indent: 0.5in;
-
-      &:first-of-type {
-        text-indent: 0;
-      }
-    }
-
-    @include lang(ja) {
-      margin-block-end: 0;
-      margin-block-start: 0;
-      text-indent: 1em;
-    }
-  }
-
-  pre {
-    @extend %element-type-block;
-
-    border: solid var(--border-width-default) var(--border-color-default);
-    font-family: var(--font-family-monospace);
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-    padding-block-end: 0.375rem;
-    padding-block-start: 0.375rem;
-    padding-inline-end: 0.75rem;
-    padding-inline-start: 0.75rem;
-    text-align: start;
-    white-space: pre-wrap;
-
-    code {
-      @extend %element-type-block;
-    }
-  }
-
+  ol,
   ul {
-    @extend %element-type-block;
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+}
 
-    margin-block-end: 1rem;
-    margin-block-start: 1rem;
-    padding-inline-start: 2rem;
+p {
+  @extend %element-type-block;
 
-    ol,
-    ul {
-      margin-block-end: 0;
-      margin-block-start: 0;
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+
+  @include lang(en) {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-indent: 0.5in;
+
+    &:first-of-type {
+      text-indent: 0;
     }
+  }
+
+  @include lang(ja) {
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-indent: 1em;
+  }
+}
+
+pre {
+  @extend %element-type-block;
+
+  border: solid var(--border-width-default) var(--border-color-default);
+  font-family: var(--font-family-monospace);
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  padding-block-end: 0.375rem;
+  padding-block-start: 0.375rem;
+  padding-inline-end: 0.75rem;
+  padding-inline-start: 0.75rem;
+  text-align: start;
+  white-space: pre-wrap;
+
+  code {
+    @extend %element-type-block;
+  }
+}
+
+ul {
+  @extend %element-type-block;
+
+  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  padding-inline-start: 2rem;
+
+  ol,
+  ul {
+    margin-block-end: 0;
+    margin-block-start: 0;
   }
 }
