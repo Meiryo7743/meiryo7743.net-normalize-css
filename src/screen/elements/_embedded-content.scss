@@ -1,4 +1,17 @@
-@use "./embedded-content/default";
-@use "./embedded-content/en";
-@use "./embedded-content/ja";
-// @use "./embedded-content/zh";
+@use "../../global/extends";
+@use "../../global/mixin";
+
+iframe {
+  @extend %element-type-block;
+
+  border: none;
+}
+
+object {
+  @extend %element-type-block;
+
+  border: none;
+}
+
+param {
+}
