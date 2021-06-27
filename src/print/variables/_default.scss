@@ -33,12 +33,13 @@ $_FONT_SIZES: (
 );
 
 $_FONT_WEIGHTS: (
-  "normal": 300,
-  "bold": 500,
+  "normal": 400,
+  "bold": 700,
 );
 
 $_FONT_FAMILY: (
   "monospace": (
+    "Inconsolata",
     "SFMono-Regular",
     "Consolas",
     "Liberation Mono",
@@ -66,7 +67,7 @@ $_FONT_FAMILY: (
     --font-family-#{$kind}: #{$fonts};
   }
 
-  --background-color-body: transparent;
+  --background-color-body: #fff;
   --background-color-form: #eee;
   --border-color-default: #000;
   --border-width-default: 1pt;
