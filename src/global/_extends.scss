@@ -23,7 +23,7 @@
 %element-type-heading {
   @extend %element-type-block;
 
-  font-feature-settings: "palt";
+  font-feature-settings: "calt", "palt";
   font-weight: var(--font-weight-bold);
   text-align: start;
 }

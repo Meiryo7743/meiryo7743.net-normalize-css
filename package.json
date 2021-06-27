@@ -1,6 +1,6 @@
 {
   "name": "meiryo7743.net-normalize-css",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "private": true,
   "author": "Meiryo7743",
   "license": "MIT",
@@ -13,7 +13,7 @@
   "devDependencies": {
     "husky": "6.0.0",
     "lint-staged": "11.0.0",
-    "prettier": "2.3.1"
+    "prettier": "2.3.2"
   },
   "dependencies": {
     "sass": "1.35.1"
