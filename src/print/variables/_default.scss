@@ -67,7 +67,7 @@ $_FONT_FAMILY: (
     --font-family-#{$kind}: #{$fonts};
   }
 
-  --background-color-body: transparent;
+  --background-color-body: #fff;
   --background-color-form: #eee;
   --border-color-default: #000;
   --border-width-default: 1pt;
