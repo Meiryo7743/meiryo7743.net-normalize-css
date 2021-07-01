@@ -29,6 +29,10 @@ dt {
   @extend %element-type-block;
 
   font-weight: var(--font-weight-bold);
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 figcaption {
