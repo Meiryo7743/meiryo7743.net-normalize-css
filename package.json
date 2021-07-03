@@ -1,17 +1,17 @@
 {
   "name": "meiryo7743.net-normalize-css",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "private": true,
   "author": "Meiryo7743",
   "license": "MIT",
   "scripts": {
-    "build": "npm run build:screen && npm run build:print",
-    "build:screen": "sass ./src/screen.scss ./dist/normalize/screen.min.css --style=compressed --no-source-map",
-    "build:print": "sass ./src/print.scss ./dist/normalize/print.min.css --style=compressed --no-source-map",
+    "build": "npm run build:screen && npm run build:print && zip -r -9 -j dist/normalize.zip dist",
+    "build:screen": "sass src/screen.scss dist/normalize/screen.min.css --style=compressed --no-source-map",
+    "build:print": "sass src/print.scss dist/normalize/print.min.css --style=compressed --no-source-map",
     "prepare": "husky install"
   },
   "devDependencies": {
-    "husky": "6.0.0",
+    "husky": "7.0.0",
     "lint-staged": "11.0.0",
     "prettier": "2.3.2"
   },

@@ -32,6 +32,10 @@ h1 {
 
   font-size: calc(var(--font-size-xxx-large) * 1rem);
   margin-block-end: 0.5rem;
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 h2 {
@@ -39,6 +43,10 @@ h2 {
 
   font-size: calc(var(--font-size-xx-large) * 1rem);
   margin-block-end: 0.5rem;
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 h3 {
@@ -46,22 +54,38 @@ h3 {
 
   font-size: calc(var(--font-size-x-large) * 1rem);
   margin-block-end: 0.5rem;
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 h4 {
   @extend %element-type-heading;
 
   font-size: calc(var(--font-size-large) * 1rem);
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 h5 {
   @extend %element-type-heading;
   font-size: 1rem;
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 h6 {
   @extend %element-type-heading;
   font-size: 1rem;
+
+  @include mixin.lang(ja) {
+    font-family: var(--font-family-sans-serif);
+  }
 }
 
 main {
